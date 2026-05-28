@@ -154,7 +154,7 @@ const server = http.createServer((req, res) => {
 
   // ── Keepalive ──
   // GET /ping — UptimeRobot keepalive (uptimerobot.com → Add Monitor → HTTP(s) → https://din-app.onrender.com/ping)
-  if (req.method === 'GET' && url.pathname === '/ping') {
+  if ((req.method === 'GET' || req.method === 'HEAD') && url.pathname === '/ping') {
     res.writeHead(200, { 'Content-Type': 'text/plain' });
     res.end('ok');
     return;
