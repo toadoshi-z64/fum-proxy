@@ -22,7 +22,7 @@ const PORT           = process.env.PORT || 3000;
 const CORS_HEADERS = {
   'Access-Control-Allow-Origin' : ALLOWED_ORIGIN,
   'Access-Control-Allow-Methods': 'PUT, GET, OPTIONS',
-  'Access-Control-Allow-Headers': 'Content-Type, Authorization',
+  'Access-Control-Allow-Headers': 'Content-Type, Authorization, X-File-Size',
   'Access-Control-Max-Age'      : '86400',
 };
 
